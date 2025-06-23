@@ -1,0 +1,29 @@
+body {
+  background-color: palevioletred;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: blueviolet;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
