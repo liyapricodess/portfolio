@@ -1,9 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+/*resets the web page
+line height is 1.6 times the font size*/
+
 body {
-  background-color: palevioletred;
+  background-color: #db6d34;
   text-align: center;
   font-family: Arial;
   font-size: 20px;
 }
+/*the text is aligned*/
 
 header {
   padding-bottom: 50px;
@@ -13,17 +23,65 @@ p {
   padding-bottom: 20px;
 }
 
-li {
-  padding-bottom: 10px;
+.skill {
+  padding: 1rem;
+  background-color: #3498db;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  text-align: center;
+  /* transition: transform(0.2); */
+}
+/*the padding spacing improves user visibility*/
+
+.skill:hover {
+  transform: scale(1.05);
+  background-color: lightgray;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 35px;
 }
 
 button {
   margin-top: 10px;
+  margin-bottom: 50px;
   padding: 10px 15px;
-  background-color: blueviolet;
+  background-color: lightgray;
   font-size: 25px;
+  border-radius: 6px;
+  margin: 50px;
 }
 
 button:hover {
-  background-color: antiquewhite;
+  background-color: rgb(211, 196, 177);
+  cursor: pointer;
+}
+/*the button's color changes when the mouse hovers*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/*the items stored in contact element are arranged in column and displayed according to flex property*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*border styling for the input element*/
+input {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+#submit {
+  width: 300px;
 }
